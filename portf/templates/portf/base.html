@@ -64,8 +64,8 @@
               <nav class="site-navigation position-relative" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                   <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
-                  <li><a href="#clients-section" class="nav-link">Client</a></li>
-                  <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                  {% comment %} <li><a href="#clients-section" class="nav-link">Client</a></li>
+                  <li><a href="#contact-section" class="nav-link">Contact</a></li> {% endcomment %}
                 </ul>
               </nav>
 
@@ -118,8 +118,10 @@
               <div class="service d-flex h-100">
                 <div class="service-number mr-4"><span class="icon-style"></span></div>
                 <div class="service-about">
-                  <h3>Mobile Development</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
+                  <h3>Mobile & Web Development</h3>
+                  <p>I'm a developer, so I know how to create your website and your mobile application
+                   to run across devices using the latest technologies available.
+                   </p>
                 </div>
               </div>
             </div>
@@ -128,31 +130,13 @@
               <div class="service d-flex h-100">
                 <div class="service-number mr-4"><span class="icon-business_center"></span></div>
                 <div class="service-about">
-                  <h3>Web Development</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
+                  <h3>Design</h3>
+                  <p>I like to keep it simple. My goals are to focus on the message that you want to send
+                  with the best look.</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-6 mb-4">
-              <div class="service d-flex h-100">
-                <div class="service-number mr-4"><span class="icon-desktop_windows"></span></div>
-                <div class="service-about">
-                  <h3>Brand &amp; Logo Design</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 mb-4">
-              <div class="service d-flex h-100">
-                <div class="service-number mr-4"><span class="icon-layers"></span></div>
-                <div class="service-about">
-                  <h3>Web Design</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
-                </div>
-              </div>
-            </div>
 
           </div>
         </div>
@@ -165,17 +149,20 @@
               <h2 class="section-title">About Me</h2>
             </div>
             <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
-              <div class="bg-light pt-5">
-              <img src="{% static 'portf/images/face.jpg' %}" alt="Image" class="img-fluid">
+              <div class="bg-light">
+              <img src="{% static 'portf/images/face2.jpg' %}"  alt="Image" class="img-fluid">
               </div>
             </div>
             <div class="col-lg-4 order-2 order-lg-1">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
+              <p>I am passionate about building excellent software that improves the lives of those around me.
+               I already work for national and international costumer for a website.
+               </p>
+              
             </div>
             <div class="col-lg-4 order-3 order-lg-3">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam qui maiores, ipsa quibusdam distinctio! Expedita ipsum ex porro obcaecati.</p>
+              <p>I also works as a internship for two startups and individuals. </p>
+              <p>If you have a project that you want to get started, think you need my help with something or 
+              just fancy saying hey, then get in touch.</p>
               <p><a href="#contact-section" class="btn smoothscroll btn-primary">Contact Me</a></p>
             </div>
 
@@ -199,66 +186,30 @@
 
           <div id="posts" class="row no-gutter">
             <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-              <a href="images/post_2.jpg" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="{% static 'portf/images/post_2.jpg' %}">
-              </a>
+              <img class="img-fluid" src="{% static 'portf/images/post_2.jpg' %}">
+
             </div>
             <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-              <a href="images/post_3.jpg" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="{% static 'portf/images/post_3.jpg' %}">
-              </a>
+              <img class="img-fluid" src="{% static 'portf/images/post_3.jpg' %}">
             </div>
 
             <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-              <a href="images/post_4.jpg" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="{% static 'portf/images/post_4.jpg' %}">
-              </a>
+              <img class="img-fluid" src="{% static 'portf/images/post_3.jpg' %}">
+            </div>
+
+          
+
+            <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+              <img class="img-fluid" src="{% static 'portf/images/post_3.jpg' %}">
             </div>
 
             <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-
-              <a href="images/post_5.jpg" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="{% static 'portf/images/post_5.jpg' %}">
-              </a>
-
+              <img class="img-fluid" src="{% static 'portf/images/post_4.jpg' %}">
             </div>
 
             <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-              <a href="images/post_6.jpg" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="{% static 'portf/images/post_6.jpg' %}">
-              </a>
-            </div>
-
-            <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-              <a href="images/post_2.jpg" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="{% static 'portf/images/post_2.jpg' %}">
-              </a>
-            </div>
-
-            <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-              <a href="images/post_3.jpg" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="{% static 'portf/images/post_3.jpg' %}">
-              </a>
-            </div>
-
-            <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-              <a href="images/post_4.jpg" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="{% static 'portf/images/post_4.jpg' %}">
-              </a>
-            </div>
-
-            <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-              <a href="images/post_6.jpg" class="item-wrap fancybox">
-                <span class="icon-search2"></span>
-                <img class="img-fluid" src="{% static 'portf/images/post_6.jpg' %}">
+             <img class="img-fluid" src="{% static 'portf/images/post_6.jpg' %}">
+              <a href="images/post_6.jpg" >  
               </a>
             </div>
 
@@ -269,7 +220,7 @@
       </section>
 
 
-      <section class="site-section bg-dark">
+      {% comment %} <section class="site-section bg-dark">
         <div class="container">
           <div class="row">
             <div class="col-12 mb-5 position-relative">
@@ -297,9 +248,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> {% endcomment %}
 
-      <section class="site-section"  id="clients-section">
+     {% comment %}  <section class="site-section"  id="clients-section">
         <div class="container">
           <div class="row">
             <div class="col-12 mb-5 position-relative">
@@ -328,10 +279,10 @@
           </div>
         </div>
       </section>
+ {% endcomment %}
 
 
-
-      <section class="site-section" id="contact-section">
+     {% comment %}  <section class="site-section" id="contact-section">
         <div class="container">
           <div class="row">
             <div class="col-12 mb-5 position-relative">
@@ -375,49 +326,37 @@
           </form>
         </div>
       </section>
-
+ {% endcomment %}
       <footer class="site-section bg-light footer">
         <div class="container">
           <div class="row mb-5">
             <div class="col-md-3">
-              <h3 class="footer-title">Me Address</h3>
-              <p><span class="d-inline-block d-md-block">203 Fake St. Mountain View,</span> San Francisco, California, USA</p>
+              <h3 class="footer-title">My Address</h3>
+              <p><span class="d-inline-block d-md-block">Agoe</span> Togo , Lomé</p>
             </div>
             <div class="col-md-5 mx-auto">
               <div class="row">
                 <div class="col-lg-4">
+                
+                </div>
+                <div class="col-lg-4">
                   <h3 class="footer-title">Services</h3>
                   <ul class="list-unstyled">
-                    <li><a href="#">Web App</a></li>
+                    <li><a href="#">Web & mobile App</a></li>
                     <li><a href="#">Graphic</a></li>
-                    <li><a href="#">Branding</a></li>
                   </ul>
                 </div>
                 <div class="col-lg-4">
-                  <h3 class="footer-title">Resources</h3>
-                  <ul class="list-unstyled">
-                    <li><a href="#">Web App</a></li>
-                    <li><a href="#">Graphic</a></li>
-                    <li><a href="#">Branding</a></li>
-                  </ul>
-                </div>
-                <div class="col-lg-4">
-                  <h3 class="footer-title">Links</h3>
-                  <ul class="list-unstyled">
-                    <li><a href="#">Web App</a></li>
-                    <li><a href="#">Graphic</a></li>
-                    <li><a href="#">Branding</a></li>
-                  </ul>
+                 
                 </div>
               </div>
             </div>
             <div class="col-md-3">
               <h3 class="footer-title">Follow Me</h3>
-              <a href="#" class="social-circle"><span class="icon-twitter"></span></a>
-              <a href="#" class="social-circle"><span class="icon-facebook"></span></a>
-              <a href="#" class="social-circle"><span class="icon-instagram"></span></a>
-              <a href="#" class="social-circle"><span class="icon-dribbble"></span></a>
-              <a href="#" class="social-circle"><span class="icon-linkedin"></span></a>
+             
+              
+              <a href="https://www.instagram.com/kibo_graph/" class="social-circle"><span class="icon-instagram"></span></a>
+             
             </div>
           </div>
 
@@ -425,7 +364,6 @@
             <div class="col-12 text-center">
             <p>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               </p>
               </div>
